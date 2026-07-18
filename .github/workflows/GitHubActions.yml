@@ -8,9 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Hello World Script
-        run: echo "Hello World!"
+        run: |
+          pwd
+          ls -r
   python-log-parse-job:
     runs-on: ubuntu-latest
     steps:
       - name: Run log parser
-        run: python codepipeline/src/log-parse.py
+        run: python aws/codepipeline/src/log-parse.py
