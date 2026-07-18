@@ -1,0 +1,16 @@
+name: Test pipeline
+
+# Triggers the workflow manually or whenever code is pushed to the repo
+on: [push, workflow_dispatch]
+
+jobs:
+  hello-world-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Hello World Script
+        run: echo "Hello World!"
+  python-log-parse-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run log parser
+        run: python test.py
