@@ -10,9 +10,9 @@ jobs:
       - name: Run Hello World Script
         run: |
           pwd
-          ls -r /home/runner/work/aws/
+          ls -r /home/runner/work/aws/aws/
   python-log-parse-job:
     runs-on: ubuntu-latest
     steps:
       - name: Run log parser
-        run: python /home/runner/work/aws/codepipeline/src/log-parse.py
+        run: python /home/runner/work/aws/aws/codepipeline/src/log-parse.py
