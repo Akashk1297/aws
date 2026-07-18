@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run log parser
-        run: python test.py
+        run: python codepipeline/src/log-parse.py
