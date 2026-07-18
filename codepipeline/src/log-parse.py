@@ -1,5 +1,5 @@
 endpoint_dict={}
-with open('file.log') as f:
+with open('pipeline/src/file.log') as f:
     for line in f:
         #print(line)
         parts=line.strip().split(" ")
