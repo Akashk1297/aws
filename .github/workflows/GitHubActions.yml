@@ -7,6 +7,8 @@ jobs:
   hello-world-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: Run Hello World Script
         run: |
           pwd
@@ -14,5 +16,7 @@ jobs:
   python-log-parse-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Run log parser
-        run: python /home/runner/work/aws/aws/codepipeline/src/log-parse.py
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run log parser script
+        run: python codepipeline/src/log-parse.py
