@@ -19,4 +19,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Run log parser script
-        run: python codepipeline/src/log-parse.py
+        run: python pipeline/src/log-parse.py
